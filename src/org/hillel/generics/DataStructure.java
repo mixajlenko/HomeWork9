@@ -18,9 +18,10 @@ public class DataStructure<T> {
         }
     }
 
-    public void printEven() {
+    public void printArray() {
 
         DataStructureIterator iterator = this.getObjectEvenIterator();
+        System.out.print("Array elements is: ");
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
@@ -54,6 +55,6 @@ public class DataStructure<T> {
 
     public static void main(String[] args) {
         DataStructure ds = new DataStructure();
-        ds.printEven();
+        ds.printArray();
     }
 }

@@ -55,17 +55,18 @@ public class ArrayAndListUtils {
 
         Scanner scan = new Scanner(System.in);
         while (lifeCycle == true) {
-            System.out.println("\nДиапазон поиска");
-            System.out.println("Начальный индекс элемента поиска в коллекции: ");
+            System.out.println("\nSearch range");
+            System.out.println("\n" +
+                    "The initial index of a search item in the collection: ");
             command1 = scan.nextInt();
             if (command1 > list.size()) {
-                System.out.println("Введите индекс в диапазоне от 0 до " + list.size());
+                System.out.println("Enter an index from 0 to " + list.size());
                 continue;
             }
-            System.out.println("Конечный индекс элемента поиска в коллекции: ");
+            System.out.println("\nThe final index of a search item in the collection: ");
             command2 = scan.nextInt();
             if (command2 > list.size()) {
-                System.out.println("Введите индекс в диапазоне от " + command1 + " до " + list.size());
+                System.out.println("Enter an index from " + command1 + " to " + list.size());
                 continue;
             }
             lifeCycle = false;
@@ -74,6 +75,6 @@ public class ArrayAndListUtils {
             if (tmp == null) tmp = item;
             Item.add(item);
         }
-        System.out.println("\nелемент с максимальным значение коллекции :" + Collections.max(Item));
+        System.out.println("\nElement with maximum collection value:" + Collections.max(Item));
     }
 }

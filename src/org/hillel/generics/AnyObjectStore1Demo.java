@@ -22,14 +22,14 @@ public class AnyObjectStore1Demo {
         mySetNew.add(obj3);
 
 
-        System.out.println("Коллекция после добавления обьектов\n" + mySetNew);
+        System.out.println("Collection after adding objects:\n" + mySetNew);
 
         mySetNew.clear();
 
         if (mySetNew.isEmpty()) {
-            System.out.println("Коллекция после удаления обьектов пуста: " + mySetNew);
+            System.out.println("Collection after removing objects is empty: " + mySetNew);
         } else {
-            System.out.println("В коллекции все еще содержатся елементы: " + mySetNew);
+            System.out.println("The collection still contains the elements: " + mySetNew);
         }
     }
 }
